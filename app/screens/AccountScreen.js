@@ -1,10 +1,9 @@
 import React from "react";
-import { StyleSheet, FlatList, View } from "react-native";
+import { StyleSheet, View, FlatList } from "react-native";
 
-import ListItem from "../components/ListItem";
+import { ListItem, ListItemSeparator } from "../components/lists";
 import Screen from "../components/Screen";
 import Icon from "../components/Icon";
-import ListItemSeparator from "../components/ListItemSeparator";
 
 import colors from "../config/colors";
 
@@ -54,8 +53,8 @@ export default function AccountScreen() {
         />
       </View>
       <ListItem
-        title="Log out"
-        IconComponent={<Icon name="logout" backgroundColor="#ff366d" />}
+        title="Log Out"
+        IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
       />
     </Screen>
   );

@@ -3,7 +3,6 @@ import { FlatList, StyleSheet } from "react-native";
 
 import Screen from "../components/Screen";
 import Card from "../components/Card";
-
 import colors from "../config/colors";
 
 const listings = [
@@ -29,7 +28,7 @@ export default function ListingsScreen() {
         keyExtractor={(listing) => listing.id.toString()}
         renderItem={({ item }) => (
           <Card
-            title={item.tile}
+            title={item.title}
             subTitle={"$" + item.price}
             image={item.image}
           />

@@ -2,10 +2,10 @@ import React from "react";
 import { Formik } from "formik";
 
 export default function AppForm({
-  children,
   initialValues,
   onSubmit,
   validationSchema,
+  children,
 }) {
   return (
     <Formik
